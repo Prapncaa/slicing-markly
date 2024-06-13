@@ -108,11 +108,18 @@ a {
     font-weight: 300;
 }
 
-.pricing-img {
+.pricing {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+}
+
+.price-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 }
 
 .faq {
@@ -293,7 +300,7 @@ a {
 
 .cowork {
     padding: 250px 0;
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7)), url(cowork-7.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7)), url(./Assets/cowork-7.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 79%;
@@ -533,7 +540,7 @@ li a:hover {
     }
     .cowork{
         padding: 145px 0;
-        background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7)), url(cowork-7.jpg);
+        background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7)), url(./Assets/cowork-7.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center 79%;
