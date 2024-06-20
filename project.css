@@ -8,7 +8,7 @@
 
 header {
     display: flex;
-    padding: 25px;
+    padding:20px;
     justify-content: space-between;
     background-color: white;
     align-items: center;
@@ -37,10 +37,7 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-nav ul li {
-    margin-right: 15px;
+    gap: 30px;
 }
 
 nav ul li a {
@@ -119,7 +116,9 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 0 30px;
 }
 
 .faq {
@@ -130,7 +129,7 @@ a {
 
 .container-img {
     padding: 20px;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: -50px;
 }
 
@@ -142,7 +141,7 @@ a {
 }
 
 .container-text-faq {
-    margin-left: 10px;
+    /* margin-left: 10px; */
     margin-bottom: 135px;
 }
 
@@ -154,7 +153,7 @@ a {
     margin-inline-end: 0px;
     unicode-bidi: isolate;
     font-size: 17px;
-    color: grey;
+    color: #000;
     line-height: 1.8;
 }
 
@@ -387,7 +386,6 @@ footer {
 
 li {
     list-style-type: none;
-    margin-top: 10px;
 }
 
 li a {
@@ -407,9 +405,10 @@ li a:hover {
 .logo p {
     text-align: center;
     color: grey;
+    font-size: 12px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .navbar-title {
         width: 100%;
         justify-content: center;
@@ -419,16 +418,36 @@ li a:hover {
     .download {
         display: none;
     }
+
+    nav ul {
+        gap: 30px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 600px;
+    }
     .features h1 {
-        font-size: 2rem;
+        font-size: 2.1rem;
+        padding: 100px 10px;
     }
     .features p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-top: -55px;
+        line-height: 1.5;
     }
     .button-download {
         margin-top: 40px;
     }
+
+    .container-text-work {
+        font-size: 14px;
+    }
+
     .pricing h5 {
         font-size: 1.4rem;
         margin-top: 20px;
@@ -444,19 +463,18 @@ li a:hover {
     }
     .container-img img {
         width: 300px;
-        margin-left: 70px;
+    }
+    .container-text-faq {
+        padding: 70px 45px;
     }
     .container-text-faq h2 {
-        padding: 70px;
         margin-top: -60px;
         font-size: 30px;
         text-align: left;
         font-weight: 300;
     }
     .container-text-faq p {
-        padding: 70px;
-        margin-top: -120px;
-        font-size: 13px;
+        font-size: 15px;
     }
     .faq2 {
         flex-direction: column;
@@ -469,7 +487,8 @@ li a:hover {
         width: 300px;
     }
     .container-text-faq2 {
-        margin-left: 70px;
+        padding: 0 45px;
+        margin-left: 0;
         margin-top: 200px;
     }
     .container-text-faq2 h2 {
@@ -482,7 +501,8 @@ li a:hover {
     .container-text-faq2 p {
         padding: 10px;
         margin-top: 10px;
-        font-size: 13px;
+        font-size: 15px;
+        color: #000;
     }
     .faq3 {
         flex-direction: column;
@@ -496,7 +516,8 @@ li a:hover {
         width: 300px;
     }
     .container-text-faq3 {
-        margin-left: 70px;
+        padding: 0 45px;
+        margin-left: 0;
         margin-top: 60px;
     }
     .container-text-faq3 h2 {
@@ -509,7 +530,8 @@ li a:hover {
     .container-text-faq3 p {
         padding: 10px;
         margin-top: -5px;
-        font-size: 13px;
+        font-size: 15px;
+        color: #000;
     }
     .blog {
         margin-top: -300px;
@@ -549,10 +571,20 @@ li a:hover {
         align-items: center;
     }
     footer {
-        padding: 40px; 
+        padding: 20px; 
     
     footer p {
         font-size: 16px;    
     }   
+
+     .text {
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    .product, .support, .resources, .company {
+        padding: 20px;
+    }
 }
 }
